@@ -1,4 +1,9 @@
+//CSS
 import "./globals.css";
+
+//Fonts
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 
 export const metadata = {
   title: "Small Library",
@@ -8,8 +13,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
+      <body className="bg-woodsmoke">{children}</body>
     </html>
   );
 }
